@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="图书管理系统"
+
+        android:textSize="30dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pic_logo1"/>
+
+    <!-- 用户名子布局,水平布局，包含一个TextView控件与EditView控件   -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:text="用户名:"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/username_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="90dp"
+            android:layout_weight="2"
+            android:background="@drawable/eidttext_background"
+            android:hint="请输入用户名"
+            android:maxLines="1"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!--    密码子布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="70dp"
+            android:text="密码:"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:padding="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="90dp"
+            android:maxLines="1"
+            android:hint="请输入密码"
+            android:background="@drawable/eidttext_background"
+            android:inputType="textPassword"/>
+        <!--inputType是设置密码输入框的文本是密码的形式，这步很关键-->
+    </LinearLayout>
+
+    <!--    记住密码子布局-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_text"
+            android:layout_marginLeft="90dp"
+            android:checked="false"
+            android:text="记住密码"
+            android:textSize="12dp"/>
+        <CheckBox
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_checkbook"
+            android:layout_marginLeft="70dp"
+            android:checked="false"
+            android:text="显示密码"
+            android:textSize="12dp"
+            />
+
+    </LinearLayout>
+
+    <!--    注册登录按钮子布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp">
+
+        <!--        注册按钮-->
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+
+            android:backgroundTint="#000000"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:text="注册"/>
+        <!--登录按钮-->
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+
+            android:backgroundTint="#000000"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:text="登录"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

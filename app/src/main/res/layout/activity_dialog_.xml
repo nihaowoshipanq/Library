@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/eidttext_background"
+    android:backgroundTint="#FFFFFF">
+
+    <!--    书籍名称子布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="书籍名称："
+            android:textSize="20dp"
+            android:textColor="#000000"
+
+            />
+        <EditText
+            android:id="@+id/add_bookname_text"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/eidttext_background"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <!--    书籍编号子布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="书籍编号："
+            android:textSize="20dp"
+            android:textColor="#000000"
+
+            />
+        <EditText
+            android:id="@+id/add_bookID_text"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/eidttext_background"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:maxLines="5"
+
+            />
+    </LinearLayout>
+
+    <!--    书籍价格子布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="书籍价格："
+            android:textSize="20dp"
+            android:textColor="#000000"
+
+            />
+        <EditText
+            android:id="@+id/add_bookPrice_text"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/eidttext_background"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+
+            />
+    </LinearLayout>
+
+    <!--    操作结果文本框-->
+    <EditText
+        android:id="@+id/add_result_text"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:background="@drawable/eidttext_background"
+        android:textColor="#000000"/>
+
+    <!--    确定以及取消按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        >
+
+        <!--        确定按钮-->
+        <Button
+            android:id="@+id/add_yes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#000000"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:text="确定"/>
+        <!--登录按钮-->
+        <Button
+            android:id="@+id/add_no_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#000000"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:text="取消"/>
+    </LinearLayout>
+
+</LinearLayout>
